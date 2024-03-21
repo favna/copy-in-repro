@@ -184,7 +184,7 @@ public class CopyInTemplate {
 
 	private String copyInSql(final String tableName, final List<String> columnNames) {
 		return copyInCsvSql(tableName, columnNames, bld -> bld
-				.append("FROM STDIN WITH CSV")
+				.append("FROM STDIN WITH")
 				.append("  DELIMITER '" + DELIMITER + "'")
 				.append("  NULL '" + NULL_VALUE + "'")
 				.append("  ESCAPE '" + ESCAPE + "'")
