@@ -1,0 +1,37 @@
+spring:
+  jmx:
+    enabled: false
+
+  main:
+    lazy-initialization: false
+    web-application-type: none
+
+  application:
+    name: copy-in-repro
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/gpadmin
+    username: gpadmin
+    password: gpadmin
+    generate-unique-name: true
+    properties:
+      schema: public
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?reWriteBatchedInserts=true&user=gpadmin&password=gpadmin
+    username: gpadmin
+    password: gpadmin
+    driver-class-name: org.postgresql.Driver
+    trust: true
+    generate-unique-name: true
+    tomcat:
+      connection-properties: reWriteBatchedInserts=true
+    hikari:
+      maximum-pool-size: 2 # CopyManager and Liquibase
+      minimum-idle: 0
+
+sql:
+  copy:
+    buffer-size: 1048576
+
+configuredId: 1

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>sapphiredev/.github:sapphire-renovate"],
+  "gradle": {
+    "rangeStrategy": "bump",
+    "automerge": true,
+    "platformAutomerge": true
+  },
+  "gradle-wrapper": {
+    "rangeStrategy": "bump",
+    "automerge": true,
+    "platformAutomerge": true
+  }
+}

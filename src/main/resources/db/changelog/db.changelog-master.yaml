@@ -1,0 +1,8 @@
+# Note: files in the following directory are picked up in alphabetical order!
+databaseChangeLog:
+  - include:
+      file: db/changelog/changes/V0001__create_schema.sql
+  - include:
+      file: db/changelog/changes/V0002__create_reference_entity_table.sql
+  - include:
+      file: db/changelog/changes/V0003__fix_reference_entity_table.sql
