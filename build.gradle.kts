@@ -46,7 +46,7 @@ repositories {
 }
 
 val springBootVersion = "3.2.4"
-val lombokVersion = "1.18.30"
+val lombokVersion = "1.18.32"
 
 dependencies {
     //  Spring
@@ -55,19 +55,19 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:${springBootVersion}")
 
     // Utilities
-    implementation("com.google.guava:guava:33.0.0-jre")
+    implementation("com.google.guava:guava:33.1.0-jre")
 
     // Database
-    runtimeOnly("org.postgresql:postgresql:42.7.2")
-    implementation("org.postgresql:r2dbc-postgresql:1.0.4.RELEASE")
+    runtimeOnly("org.postgresql:postgresql:42.7.3")
+    implementation("org.postgresql:r2dbc-postgresql:1.0.5.RELEASE")
 
     // Lombok
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
     annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
 
     // Dependencies required for running liquibase for tests
-    liquibaseRuntime("org.postgresql:postgresql:42.7.2")
-    liquibaseRuntime("org.liquibase:liquibase-core:4.26.0")
+    liquibaseRuntime("org.postgresql:postgresql:42.7.3")
+    liquibaseRuntime("org.liquibase:liquibase-core:4.27.0")
     liquibaseRuntime("info.picocli:picocli:4.7.5")
 }
 
