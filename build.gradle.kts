@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("org.springframework.boot") version "3.2.4"
+    id("org.springframework.boot") version "3.2.5"
     id("io.spring.dependency-management") version "1.1.4"
        id("org.liquibase.gradle") version "2.2.1"
 }
@@ -45,7 +45,7 @@ repositories {
     mavenCentral()
 }
 
-val springBootVersion = "3.2.4"
+val springBootVersion = "3.2.5"
 val lombokVersion = "1.18.32"
 
 dependencies {
