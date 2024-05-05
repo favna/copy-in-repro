@@ -1,7 +1,7 @@
 plugins {
     id("java")
     id("org.springframework.boot") version "3.2.5"
-    id("io.spring.dependency-management") version "1.1.4"
+    id("io.spring.dependency-management") version "1.1.5"
        id("org.liquibase.gradle") version "2.2.2"
 }
 
@@ -55,7 +55,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:${springBootVersion}")
 
     // Utilities
-    implementation("com.google.guava:guava:33.1.0-jre")
+    implementation("com.google.guava:guava:33.2.0-jre")
 
     // Database
     runtimeOnly("org.postgresql:postgresql:42.7.3")
