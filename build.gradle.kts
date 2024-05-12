@@ -68,7 +68,7 @@ dependencies {
     // Dependencies required for running liquibase for tests
     liquibaseRuntime("org.postgresql:postgresql:42.7.3")
     liquibaseRuntime("org.liquibase:liquibase-core:4.27.0")
-    liquibaseRuntime("info.picocli:picocli:4.7.5")
+    liquibaseRuntime("info.picocli:picocli:4.7.6")
 }
 
 tasks.withType<JavaCompile>().configureEach {
