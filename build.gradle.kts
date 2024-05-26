@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("org.springframework.boot") version "3.2.5"
+    id("org.springframework.boot") version "3.3.0"
     id("io.spring.dependency-management") version "1.1.5"
        id("org.liquibase.gradle") version "2.2.2"
 }
@@ -45,7 +45,7 @@ repositories {
     mavenCentral()
 }
 
-val springBootVersion = "3.2.5"
+val springBootVersion = "3.3.0"
 val lombokVersion = "1.18.32"
 
 dependencies {
@@ -67,7 +67,7 @@ dependencies {
 
     // Dependencies required for running liquibase for tests
     liquibaseRuntime("org.postgresql:postgresql:42.7.3")
-    liquibaseRuntime("org.liquibase:liquibase-core:4.27.0")
+    liquibaseRuntime("org.liquibase:liquibase-core:4.28.0")
     liquibaseRuntime("info.picocli:picocli:4.7.6")
 }
 
