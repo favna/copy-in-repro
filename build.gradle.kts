@@ -46,7 +46,7 @@ repositories {
 }
 
 val springBootVersion = "3.3.1"
-val lombokVersion = "1.18.32"
+val lombokVersion = "1.18.34"
 
 dependencies {
     //  Spring
