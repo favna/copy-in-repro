@@ -55,7 +55,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc:${springBootVersion}")
 
     // Utilities
-    implementation("com.google.guava:guava:33.2.1-jre")
+    implementation("com.google.guava:guava:33.3.0-jre")
 
     // Database
     runtimeOnly("org.postgresql:postgresql:42.7.3")
