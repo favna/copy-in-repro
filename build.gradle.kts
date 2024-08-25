@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("org.springframework.boot") version "3.3.2"
+    id("org.springframework.boot") version "3.3.3"
     id("io.spring.dependency-management") version "1.1.6"
        id("org.liquibase.gradle") version "3.0.0"
 }
@@ -45,7 +45,7 @@ repositories {
     mavenCentral()
 }
 
-val springBootVersion = "3.3.2"
+val springBootVersion = "3.3.3"
 val lombokVersion = "1.18.34"
 
 dependencies {
@@ -58,7 +58,7 @@ dependencies {
     implementation("com.google.guava:guava:33.3.0-jre")
 
     // Database
-    runtimeOnly("org.postgresql:postgresql:42.7.3")
+    runtimeOnly("org.postgresql:postgresql:42.7.4")
     implementation("org.postgresql:r2dbc-postgresql:1.0.5.RELEASE")
 
     // Lombok
@@ -66,7 +66,7 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
 
     // Dependencies required for running liquibase for tests
-    liquibaseRuntime("org.postgresql:postgresql:42.7.3")
+    liquibaseRuntime("org.postgresql:postgresql:42.7.4")
     liquibaseRuntime("org.liquibase:liquibase-core:4.29.1")
     liquibaseRuntime("info.picocli:picocli:4.7.6")
 }
