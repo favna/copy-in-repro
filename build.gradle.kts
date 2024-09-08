@@ -67,7 +67,7 @@ dependencies {
 
     // Dependencies required for running liquibase for tests
     liquibaseRuntime("org.postgresql:postgresql:42.7.4")
-    liquibaseRuntime("org.liquibase:liquibase-core:4.29.1")
+    liquibaseRuntime("org.liquibase:liquibase-core:4.29.2")
     liquibaseRuntime("info.picocli:picocli:4.7.6")
 }
 
