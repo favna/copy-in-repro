@@ -2,7 +2,7 @@ plugins {
     id("java")
     id("org.springframework.boot") version "3.3.3"
     id("io.spring.dependency-management") version "1.1.6"
-       id("org.liquibase.gradle") version "3.0.0"
+       id("org.liquibase.gradle") version "3.0.1"
 }
 
 group = "dev.favware"
