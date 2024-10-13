@@ -59,7 +59,7 @@ dependencies {
 
     // Database
     runtimeOnly("org.postgresql:postgresql:42.7.4")
-    implementation("org.postgresql:r2dbc-postgresql:1.0.5.RELEASE")
+    implementation("org.postgresql:r2dbc-postgresql:1.0.6.RELEASE")
 
     // Lombok
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
