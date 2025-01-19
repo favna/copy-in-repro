@@ -58,7 +58,7 @@ dependencies {
     implementation("com.google.guava:guava:33.4.0-jre")
 
     // Database
-    runtimeOnly("org.postgresql:postgresql:42.7.4")
+    runtimeOnly("org.postgresql:postgresql:42.7.5")
     implementation("org.postgresql:r2dbc-postgresql:1.0.7.RELEASE")
 
     // Lombok
@@ -66,8 +66,8 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
 
     // Dependencies required for running liquibase for tests
-    liquibaseRuntime("org.postgresql:postgresql:42.7.4")
-    liquibaseRuntime("org.liquibase:liquibase-core:4.30.0")
+    liquibaseRuntime("org.postgresql:postgresql:42.7.5")
+    liquibaseRuntime("org.liquibase:liquibase-core:4.31.0")
     liquibaseRuntime("info.picocli:picocli:4.7.6")
 }
 
